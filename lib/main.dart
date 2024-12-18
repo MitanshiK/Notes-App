@@ -6,11 +6,12 @@ import 'package:notes_app/database/databasehelper.dart';
 import 'package:notes_app/database/notebook_db_helper.dart';
 import 'package:notes_app/home/views/bottom_nav.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() async{
-WidgetsFlutterBinding.ensureInitialized();
-  await DatabaseHelper.instance.initDb();
+  WidgetsFlutterBinding.ensureInitialized();
+  //  FlutterNativeSplash.preserve(widgetsBinding: WidgetsFlutterBinding.ensureInitialized());
+   await DatabaseHelper.instance.initDb();
   _initializeBooksOnce();
   // await NotebookDbHelper.instance.initializeNoteBook();
   // await NotesDbHelper.instance.initializeNotes();
@@ -72,7 +73,7 @@ class MyApp extends StatelessWidget {
         colorScheme:  const ColorScheme.dark(
           background: Colors.black,
           primary: Color.fromARGB(255, 214, 176, 220),
-          secondary: Color.fromARGB(255, 55, 55, 55)
+          secondary: Color.fromARGB(255, 105, 103, 103)
         ),
         useMaterial3: true,
       ),
@@ -110,7 +111,7 @@ class MyApp extends StatelessWidget {
         colorScheme: const ColorScheme.light(
           background: Color.fromARGB(255, 237, 237, 237),
           primary: Color.fromARGB(255, 214, 176, 220),
-          secondary: Colors.white
+          secondary: Color.fromARGB(255, 238, 238, 238)
         ),
         useMaterial3: true,
       ),

@@ -59,13 +59,36 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.3
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+# flutter_native_splash-development.yaml
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/icons/app/note.png
+  color_dark: "#121212"
+  image_dark: assets/icons/app/note.png
+  branding: assets/icons/app/note.png
+  branding_dark: assets/icons/app/note.png
+
+  android_12:
+    image: assets/icons/app/note.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/icons/app/note.png
+    icon_background_color_dark: "#121212"
+
+  web: false
+
+
+# flutter_native_splash:
+#   color: "#ffffff" # Background color (hex or color name)
+#   image: assets/icons/app/note.png  # Path to your splash image
+#   android: true # Enable for Android
+#   ios: true # Enable for iOS
+#   web: true # Enable for Web
+#   android_gravity: center # Position of the image (center, top, bottom)
+#   ios_content_mode: center # iOS image mode (center, scaleToFill, scaleAspectFit)
+#   fullscreen: true # Enable fullscreen mode
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

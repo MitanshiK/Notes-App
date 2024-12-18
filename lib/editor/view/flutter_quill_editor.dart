@@ -98,7 +98,7 @@ class _FlutterQuillEditorState extends ConsumerState<FlutterQuillEditor> {
             await NotesDbHelper.instance.updateNotes(updateModal);
           } 
            ref.read(homeNotifierProvider.notifier).fetchNotes();      ////////
-      }
+         }
         },
         child: Column(
           children: [

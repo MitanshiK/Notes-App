@@ -64,7 +64,7 @@ class _HomescreenState extends ConsumerState<Homescreen>     with WidgetsBinding
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.background,
+          // backgroundColor: Theme.of(context).colorScheme.background,
           title: Row(
             children: [
              
